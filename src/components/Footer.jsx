@@ -3,8 +3,8 @@ import { MoveUpRight, Mail, Linkedin } from "lucide-react";
 function Footer() {
   return (
     <footer className="relative bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div className="max-w-7xl mx-auto px-6 py-16 bg-cover">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
           <div>
             <div className="flex items-center gap-4 mb-4">
               <img
@@ -96,6 +96,13 @@ function Footer() {
                 <Linkedin />
               </a>
             </div>
+          </div>
+          <div className="">
+            <img
+              alt="MeetPanda"
+              className="opacity-10 grayscale w-60 h-60 no-invert "
+              src="https://meetpanda.in/img/home/primary-logo.svg"
+            ></img>
           </div>
         </div>
       </div>
