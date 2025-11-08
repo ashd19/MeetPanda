@@ -97,20 +97,21 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="">
-            <img
-              alt="MeetPanda"
-              className="opacity-10 grayscale w-60 h-60 no-invert "
-              src="https://meetpanda.in/img/home/primary-logo.svg"
-            ></img>
-          </div>
         </div>
       </div>
 
-      {/* Decorative paw in the bottom-right  */}
-      {/* <div>
-    </div>   
-    */}
+      {/* Decorative paw/logo in the bottom-right as a background image */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute right-6 bottom-6 w-30 h-30 md:w-60 md:h-60 opacity-10 grayscale  md:block"
+        style={{
+          backgroundImage:
+            "url('https://meetpanda.in/img/home/primary-logo.svg')",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      />
     </footer>
   );
 }
