@@ -13,7 +13,7 @@ function App() {
       <GetStarted />
       <Workflow />
       <UseCases />
-      {/* <SocialProof /> */}
+      <SocialProof />
       <Footer />
     </div>
   );
