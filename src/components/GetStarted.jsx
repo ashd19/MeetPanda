@@ -1,3 +1,4 @@
+import { Sparkle } from "lucide-react";
 import React from "react";
 
 function FeatureBullet({ children }) {
@@ -33,27 +34,7 @@ export default function GetStarted() {
   return (
     <section className="relative overflow-hidden py-16">
       {/* subtle dotted background */}
-      <div className="pointer-events-none absolute inset-0 opacity-10">
-        <svg
-          className="w-full h-full"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <pattern
-              id="dots"
-              x="0"
-              y="0"
-              width="20"
-              height="20"
-              patternUnits="userSpaceOnUse"
-            >
-              <circle cx="2" cy="2" r="1" fill="#c7d2fe" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#dots)" />
-        </svg>
-      </div>
+      <div className="pointer-events-none absolute inset-0 opacity-10"></div>
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -61,22 +42,7 @@ export default function GetStarted() {
           <div className="z-10">
             <div className="inline-flex items-center gap-2 mb-4">
               <span className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full text-sm">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="text-indigo-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2v6M12 22v-6M4.2 4.2l4.2 4.2M19.8 19.8l-4.2-4.2M2 12h6M22 12h-6M4.2 19.8l4.2-4.2M19.8 4.2l-4.2 4.2"
-                    stroke="currentColor"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <Sparkle width={10} height={10} />
                 Get started
               </span>
             </div>
@@ -93,10 +59,28 @@ export default function GetStarted() {
             </p>
 
             <ul className="space-y-4 mb-8">
-              <FeatureBullet>MeetPanda auto-joins your meetings</FeatureBullet>
-              <FeatureBullet>
-                MeetPanda can connect to your personal calendar
-              </FeatureBullet>
+              <div className="flex">
+                <FeatureBullet>
+                  MeetPanda auto-joins your meetings{" "}
+                </FeatureBullet>
+                <span className="ml-2">
+                  <img
+                    src="https://meetpanda.in/img/home/steps-meeting.svg"
+                    alt=""
+                  />
+                </span>
+              </div>
+
+              <div className="flex gap-2">
+                <FeatureBullet>
+                  MeetPanda can connect to your personal calendar
+                </FeatureBullet>
+                <img
+                  src="https://meetpanda.in/img/home/steps-calendar.svg"
+                  alt=""
+                />
+              </div>
+
               <FeatureBullet>
                 MeetPanda provides transcripts, summaries, searchability and
                 security
@@ -109,8 +93,15 @@ export default function GetStarted() {
           </div>
 
           {/* Right */}
-          <div className="z-10">
-            <div className="max-w-md ml-auto bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+          <div
+            style={{
+              backgroundImage:
+                "url('https://meetpanda.in/img/home/steps-bg.svg')",
+              backgroundSize: "cover",
+            }}
+            className="z-10"
+          >
+            <div className="max-w-md  ml-auto bg-white rounded-xl p-6 shadow-lg border border-gray-100">
               <div className="flex items-center gap-3 mb-4">
                 <img
                   src="https://meetpanda.in/img/home/primary-logo.svg"
