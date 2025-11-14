@@ -48,7 +48,7 @@ function SocialProof() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-indigo-50 relative">
+    <section className="py-16  bg-js relative">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
@@ -97,7 +97,7 @@ function SocialProof() {
               {testimonials.map((testimonial) => (
                 <div
                   key={testimonial.id}
-                  className="w-full md:w-1/3 flex-shrink-0 px-3"
+                  className="w-full md:w-1/3 shrink-0 px-3"
                 >
                   <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 h-full">
                     <div className="flex items-center gap-3 mb-4">
