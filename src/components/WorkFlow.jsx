@@ -9,7 +9,7 @@ import {
 
 function Workflow() {
   return (
-    <div className="flex flex-col items-center px-2 gap-5 ">
+    <div className="flex flex-col items-center px-2 gap-5 mb-5 md:mb-0">
       <p className=" inline-flex gap-2 bg-indigo-50  text-indigo-600 px-3 py-1 rounded-full text-sm mb-4">
         <Sparkle width={10} height={10} className="mt-1" />
         Our WorkFlow
@@ -57,8 +57,8 @@ function Workflow() {
             "url('https://meetpanda.in/img/home/workflow-bg.svg')",
         }}
       >
-        <div className="flex flex-col   mt-[70px] justify-center items-center gap-5">
-          <div className="w-[450px]  p-10 border-slate-200 rounded-xl border-3 bg-white flex flex-col gap-3 justify-center items-center">
+        <div className="flex flex-col    mt-[70px] justify-center items-center gap-5">
+          <div className="md:w-[450px]  p-10 border-slate-200 rounded-xl border-3 bg-white flex flex-col gap-3 justify-center items-center">
             <img
               src="https://meetpanda.in/img/home/primary-logo.svg"
               height={70}
