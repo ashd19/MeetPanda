@@ -24,7 +24,7 @@ export default function Benefits() {
           One <span className="text-indigo-600">Product</span> Many{" "}
           <span className="text-indigo-600">Benefits</span>
         </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-12">
+        <p className="text-gray-600 max-w-3xl font-bold mx-auto mb-12">
           Reclaim 3+ hours every week, keep your team aligned with instant
           summaries, and find any moment across meetings in seconds.
         </p>
@@ -37,7 +37,6 @@ export default function Benefits() {
           <div className="md:flex md:gap-3">
             <AutoJoinRecord />
             <div>
-
               <div className="md:flex md:flex-col ">
                 <div className="md:flex md:gap-3  ">
                   <Transcription />
