@@ -13,7 +13,7 @@ function AiSummaries() {
             insights you can act on instantly
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-5 md:mt-0 left-0">
           <img
             src="https://meetpanda.in/img/home/benefits-summary.svg"
             alt=""

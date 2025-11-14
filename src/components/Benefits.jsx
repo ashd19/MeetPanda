@@ -1,5 +1,8 @@
 import { Sparkle } from "lucide-react";
 import AutoJoinRecord from "./subcomponents/AutoJoinRecord";
+import Transcription from "./subcomponents/Transcription";
+import SearchAcrossMeetings from "./subcomponents/SearchAcrossMeetings";
+import AiSummaries from "./subcomponents/AiSummaries";
 
 export default function Benefits() {
   return (
@@ -26,14 +29,16 @@ export default function Benefits() {
           summaries, and find any moment across meetings in seconds.
         </p>
       </div>
+      {/* on mobile one after the other in col so flex-col works easily!  */}
 
-      <div className="max-w-8xl mx-auto px-6">
-        {/* Top row: 3 cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="w-full px-5 ">
+        {/* for mobile , one after the other  */}
+        <div className="flex flex-col gap-5">
+          <AutoJoinRecord />
+          <Transcription />
+          <SearchAcrossMeetings />
+          <AiSummaries className="mb-[100px]" />
         </div>
-
-        
-
       </div>
     </section>
   );
