@@ -33,11 +33,21 @@ export default function Benefits() {
 
       <div className="w-full px-5 ">
         {/* for mobile , one after the other  */}
-        <div className="flex flex-col gap-5">
-          <AutoJoinRecord />
-          <Transcription />
-          <SearchAcrossMeetings />
-          <AiSummaries className="mb-[100px]" />
+        <div className="flex flex-col gap-5 ">
+          <div className="md:flex md:gap-3">
+            <AutoJoinRecord />
+            <div>
+
+              <div className="md:flex md:flex-col ">
+                <div className="md:flex md:gap-3  ">
+                  <Transcription />
+                  <SearchAcrossMeetings />
+                </div>
+
+                <AiSummaries />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -2,8 +2,8 @@ import React from "react";
 
 function AiSummaries() {
   return (
-    <div className="grid grid-cols-1 md:flex w-full gap-6 mt-6">
-      <div className="md:flex w-full  bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+    <div className="grid grid-cols-1 md:flex w-full gap-6 mt-3 md:h-[280px]">
+      <div className="md:flex w-full md:gap-4 bg-white rounded-xl p-6 shadow-sm border border-gray-100">
         <div className="flex flex-col gap-5">
           <h4 className="font-semibold mb-2">
             AI Summaries &amp; Action Items
@@ -15,6 +15,8 @@ function AiSummaries() {
         </div>
         <div className="flex justify-center mt-5 md:mt-0 left-0">
           <img
+            height={520}
+            width={510}
             src="https://meetpanda.in/img/home/benefits-summary.svg"
             alt=""
           />

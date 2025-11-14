@@ -1,7 +1,6 @@
-
 function SearchAcrossMeetings() {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+    <div className="bg-white rounded-xl p-6 shadow-sm border mt-3 md:mt-0 border-gray-100">
       <h4 className="font-semibold mb-2">Search Across Meetings</h4>
       <p className="text-gray-500 mb-4">
         Quickly find key moments, topics, or decisions from any past meeting.

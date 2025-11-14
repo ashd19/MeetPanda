@@ -1,7 +1,7 @@
 
 function Transcription() {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+    <div className="bg-white rounded-xl p-6 shadow-sm border mt-3 md:mt-0 border-gray-100">
       <h4 className="font-semibold mb-2">Transcription</h4>
       <p className="text-gray-500 mb-4">
         Get accurate, searchable transcripts of all your meetings.
